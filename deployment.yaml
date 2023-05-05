@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-express-sample-api
+spec:
+  selector:
+    matchLabels:
+      app: k8s-express-sample-api
+  template:
+    metadata:
+      labels:
+        app: k8s-express-sample-api
+    spec:
+      containers:
+      - name: k8s-express-sample-api
+        image: <Image>
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3000
