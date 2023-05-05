@@ -1,5 +1,5 @@
 {
-  "name": "k8s",
+  "name": "k8s-sample-express-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
