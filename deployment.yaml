@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: k8s-express-sample-api
-        image: <Image>
+        image: joaopaulopmedeiros/k8s-express-sample-api:latest
         resources:
           limits:
             memory: "128Mi"
