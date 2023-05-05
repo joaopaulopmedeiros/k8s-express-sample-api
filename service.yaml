@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: k8s-express-sample-api
 spec:
+  type: NodePort
   selector:
     app: k8s-express-sample-api
   ports:
